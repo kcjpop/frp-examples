@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <title>My First FRP</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      .flex {
+        display: flex;
+        gap: 0.5em;
+      }
+
+      canvas {
+        border: 1px solid #ddd;
+        width: 100%;
+        height: 300px;
+      }
+
+      .click-n-drag {
+        position: relative;
+        height: 20lvh;
+        background-color: hsla(32.9, 100%, 90%, 0.3);
+      }
+
+      .box {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 5lvh;
+        border-radius: 0.25rem;
+        aspect-ratio: 1 / 1;
+        display: block;
+        background-color: hsl(32.9, 100%, 90%);
+      }
+
+      .selected-box {
+        border: 1px solid hsl(33, 80%, 60%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Canvas</h2>
+      <p>
+        Click and drag to draw a rectangle. After releasing the pointer/ mouse,
+        a line is drawn.
+      </p>
+
+      <canvas></canvas>
+    </section>
+
+    <section>
+      <h2>Click and drag</h2>
+      <p>Drag the box around</p>
+
+      <div id="click-n-drag" class="click-n-drag">
+        <div class="box"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Simple counter</h2>
+
+      <div class="flex">
+        <button type="button" name="sub">-</button>
+        <p id="val"></p>
+        <button type="button" name="add">+</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Form validation</h2>
+
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" />
+        <div>
+          <label>Number of email address(es):</label>
+          <button type="button" name="sub">-</button>
+          <button type="button" name="add">+</button>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

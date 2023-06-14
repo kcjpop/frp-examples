@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "parcel src/index.html --no-cache",
+    "build": "parcel src/index.html --no-cache"
+  },
+  "devDependencies": {
+    "eslint": "8.42.0",
+    "parcel": "2.9.2"
+  },
+  "dependencies": {
+    "baconjs": "3.0.17",
+    "kefir": "3.8.8"
+  }
+}
