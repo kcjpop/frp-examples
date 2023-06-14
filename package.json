@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel src/index.html --no-cache",
-    "build": "parcel src/index.html --no-cache"
+    "build": "parcel build src/index.html --no-cache"
   },
   "devDependencies": {
     "eslint": "8.42.0",
