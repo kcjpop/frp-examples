@@ -1,12 +1,6 @@
 import * as K from 'kefir'
 import { simpleCounter } from './simple-counter'
 
-/* Resources:
-- [Implementing Snake in Bacon.js](http://philipnilsson.github.io/badness/)
-  Learnt about using functions as stream values
--
-*/
-
 function canvas() {
   const c = document.querySelector('canvas')
   const ctx = c.getContext('2d')
